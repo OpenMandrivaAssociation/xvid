@@ -6,7 +6,7 @@
 
 Summary:	Video codec compatible with divx4
 Name:		xvid
-Version:	1.3.2
+Version:	1.3.3
 Release:	2
 Source0:	http://downloads.xvid.org/downloads/%fname.tar.bz2
 License:	GPLv2+
@@ -58,7 +58,6 @@ cd build/generic
 %install
 cd build/generic
 %makeinstall
-ln -s libxvidcore.so.%{major} %{buildroot}%{_libdir}/libxvidcore.so
 
 %files -n %{libname}
 %_libdir/libxvidcore.so.%{major}*
