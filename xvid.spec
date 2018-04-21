@@ -6,12 +6,12 @@
 
 Summary:	Video codec compatible with divx4
 Name:		xvid
-Version:	1.3.4
+Version:	1.3.5
 Release:	1
-Source0:	http://downloads.xvid.org/downloads/%fname.tar.gz
+Source0:	https://downloads.xvid.com/downloads/xvidcore-%{version}.tar.gz
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://www.xvid.org
+URL:		http://labs.xvid.org/source/
 Epoch:		2
 BuildRequires:	yasm
 
