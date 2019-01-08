@@ -11,7 +11,7 @@ Release:	1
 Source0:	https://downloads.xvid.com/downloads/xvidcore-%{version}.tar.gz
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://labs.xvid.org/source/
+URL:		https://labs.xvid.com/source/
 Epoch:		2
 BuildRequires:	yasm
 
