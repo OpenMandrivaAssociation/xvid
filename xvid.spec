@@ -1,3 +1,5 @@
+%global optflags %{optflags} -O3
+
 %define fname xvidcore-%{version}
 
 %define major 4
@@ -15,13 +17,13 @@
 
 Summary:	Video codec compatible with divx4
 Name:		xvid
+Epoch:		2
 Version:	1.3.7
-Release:	1
+Release:	2
 Source0:	https://downloads.xvid.com/downloads/xvidcore-%{version}.tar.bz2
 License:	GPLv2+
 Group:		System/Libraries
 URL:		https://labs.xvid.com/source/
-Epoch:		2
 BuildRequires:	yasm
 
 %description
@@ -74,7 +76,8 @@ build programs with the xvid codec using it's native API.
 %endif
 
 %prep
-%setup -q -n xvidcore
+%autosetup -n xvidcore -p1
+
 %if %{with compat32}
 # Looks like autoconf, but isn't...
 mkdir build32
@@ -103,10 +106,10 @@ cd build32/build/generic
 cd ../../..
 %endif
 cd build/generic
-%makeinstall
+%make_install
 
 %files -n %{libname}
-%_libdir/libxvidcore.so.%{major}*
+%{_libdir}/libxvidcore.so.%{major}*
 
 %files -n %{develname}
 %doc ChangeLog CodingStyle TODO AUTHORS LICENSE README
