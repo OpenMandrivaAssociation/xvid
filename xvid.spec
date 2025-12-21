@@ -24,6 +24,11 @@ Source0:	https://downloads.xvid.com/downloads/xvidcore-%{version}.tar.bz2
 License:	GPLv2+
 Group:		System/Libraries
 URL:		https://labs.xvid.com/source/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	yasm
 
 %description
