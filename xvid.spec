@@ -19,7 +19,7 @@ Summary:	Video codec compatible with divx4
 Name:		xvid
 Epoch:		2
 Version:	1.3.7
-Release:	3
+Release:	4
 Source0:	https://downloads.xvid.com/downloads/xvidcore-%{version}.tar.bz2
 License:	GPLv2+
 Group:		System/Libraries
